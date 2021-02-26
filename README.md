@@ -23,6 +23,17 @@
 
 </table>
 
+# Ravi Teja Pagidoju&nbsp;
+
+## Contibution
+- Apache FLink Fraud detection on Even Number using java
+
+## Installables
+- Java installed on machine
+- Apache flink installed(>2)
+- Netbeans IDE installed
+- Netcat installed
+
 ## Steps for Execution of Even Number Fraud Detection
 - Add flink dependencies in the pom.xml file to use flink methods in java code.
 - Build the application to make sure all the dependencies are downloaded/added to the project.
