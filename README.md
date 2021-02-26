@@ -30,6 +30,8 @@
 - Java code written using flink stream methods to listen on port 9000.
 - Now run the java application main class which starts listen to port 9000.
 - Enter a number in ncat server(powershell/cmd) and check if its a even or fraud in the netbeans output window.
+- used ncat commands
+- ```ncat -lk 9000```
 
 ## References
 - https://nmap.org/ncat/
