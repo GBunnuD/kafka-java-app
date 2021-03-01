@@ -6,10 +6,8 @@ package edu.nwmissouri.bigdata.section01.group4;
  */
 public class App 
 {
-    public static void main( String[] args ) throws Exception
+    public static void main( String[] args )
     {
-        //Even number fraud detection
-        EvenNumber evenNumber=new EvenNumber();
-        evenNumber.FraudDetectEvenNumber();
+        System.out.println( "Hello World!" );
     }
 }
