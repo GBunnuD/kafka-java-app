@@ -58,8 +58,9 @@ public class ProducerPruthvi {
   private static String randomNumber() {
 
 
-String[] laptop = { "Hp", "Lenovo", "Asus", "Acer", "Mac", "Dell" };
-    String[] os = { "windows", "linux", "uubuntu", "IOS" };
+
+String[] laptop = { "Hp", "Lenovo", "Asus", "Acer", "Mac", "Dell" }; //Array pf laptops into an array
+    String[] os = { "windows", "linux", "uubuntu", "IOS" }; //Array of OS into an array
     String[] prep = { "=", ",", "!=", "--->","/" };
 
     Random r = new Random();
@@ -68,9 +69,10 @@ String[] laptop = { "Hp", "Lenovo", "Asus", "Acer", "Mac", "Dell" };
     int minIndex = 0;
     int maxIndex = 4;
 
+
     int[] randoms = r.ints(count, minIndex, maxIndex).toArray();
 
-    return laptop[randoms[0]] + " " + prep[randoms[1]] + " " + os[randoms[2]] + ".";
+    return laptop[randoms[0]] + " " + prep[randoms[1]] + " " + os[randoms[2]] +  ".";
      }
   
 }
