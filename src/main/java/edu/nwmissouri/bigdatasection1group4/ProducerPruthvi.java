@@ -59,7 +59,7 @@ public class ProducerPruthvi {
 
 
 String[] laptop = { "Hp", "Lenovo", "Asus", "Acer", "Mac", "Dell" };
-    String[] os = { "windows", "linux", "uubuntu", "IOs" };
+    String[] os = { "windows", "linux", "uubuntu", "IOS" };
     String[] prep = { "=", ",", "!=", "--->","/" };
 
     Random r = new Random();
