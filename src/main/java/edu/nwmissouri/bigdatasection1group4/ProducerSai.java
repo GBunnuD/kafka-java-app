@@ -37,6 +37,7 @@ public class ProducerSai {
 
     // Make our own messages - create your custom logic here
 
+    
     for (int i = 1; i <= 10; i++) {
       String message = createSentence();
       ProducerRecord<String, String> rec = new ProducerRecord<String, String>(topicName, message);
