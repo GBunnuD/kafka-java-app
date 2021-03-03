@@ -81,3 +81,39 @@ For acheiving the above,i have used the following commands
 
 Refrences:
 - [Kafka Example](https://github.com/denisecase/kafka-api)
+
+## Sai Krishna Emmadishetty - Team member
+
+I used the random function to display Resturant, Prices and items.
+ 
+#### Commands used:
+
+1. Start Zookeeper in kafka folder on C drive.
+```
+.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+```
+1. Start Kafka in kafka folder on C drive.
+```
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+```
+1. Creat a new topic and list all of them.
+```
+.\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --create --topic saikrishna-msg
+.\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --list
+```
+1. Run the MVN command to compile the code.
+```
+mvn clean compile assembly:single
+```
+1. Once the build is complete, start Consumer.
+```
+java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdatasection1group4.Consumer saikrishna-msg group4
+```
+1. Then start the Producer.
+```
+java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdatasection1group4.ProducerSai saikrishna-msg
+```
+
+#### References:
+- (https://github.com/denisecase/kafka-api)
+
