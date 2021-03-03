@@ -107,6 +107,11 @@
             <archive>
               <manifest>
                 <mainClass>edu.nwmissouri.bigdatasection1group4.ProducerGD</mainClass>
+                <mainClass>edu.nwmissouri.bigdatasection1group4.ProducerGopi</mainClass>
+                <mainClass>edu.nwmissouri.bigdatasection1group4.ProducerSai</mainClass>
+                <mainClass>edu.nwmissouri.bigdatasection1group4.ProducerSRK</mainClass>
+                <mainClass>edu.nwmissouri.bigdatasection1group4.ProducerPruthvi</mainClass>
+                <mainClass>edu.nwmissouri.bigdatasection1group4.ProducerRavi</mainClass>
               </manifest>
             </archive>
             <descriptorRefs>
