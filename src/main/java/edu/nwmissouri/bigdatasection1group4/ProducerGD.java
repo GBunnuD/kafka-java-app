@@ -36,7 +36,7 @@ public class ProducerGD {
     // Make our own messages - create your custom logic here
 
     for (int i = 1; i <= 10; i++) {
-      String message = createSentence();
+      String message = randomNumber();
       ProducerRecord<String, String> rec = new ProducerRecord<String, String>(topicName, message);
       producer.send(rec);
     }
@@ -55,19 +55,19 @@ public class ProducerGD {
 
   }
 
-  private static String createSentence() {
-    String[] subjects = { "Big Data", "Kafka", "Lambda architecture", "Kappa architecture", "Spark" };
-    String[] verbs = { "is", "was", "will be", "isn't", "will never be" };
-    String[] objs = { "hard", "easy", "fun", "challenging", "awesome" };
+  private static String randomNumber() {
 
-    Random r = new Random();
 
-    int count = 3;
-    int minIndex = 0;
-    int maxIndex = 4;
+int randomNumber=0;
+    String s = "";
 
-    int[] randoms = r.ints(count, minIndex, maxIndex).toArray();
-
-    return subjects[randoms[0]] + " " + verbs[randoms[1]] + " " + objs[randoms[2]] + ".";
+    Random numGenerator = new Random();
+    for (int i = 0; i< 10; i++){
+      randomNumber = numGenerator.nextInt(100);
+      s=Integer.toString(randomNumber);
+      
+    }
+    return s;
   }
+  
 }
