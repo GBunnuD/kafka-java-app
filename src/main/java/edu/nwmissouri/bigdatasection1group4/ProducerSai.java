@@ -7,9 +7,7 @@ import java.util.Properties;
 import java.util.Random;
 import java.util.Scanner;
 
-/**
- * Created by sunilpatil on 12/28/15. Modified by Denise Case on 10/29/2019.
- */
+
 public class ProducerSai {
   private static Scanner in;
 
