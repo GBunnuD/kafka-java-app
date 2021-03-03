@@ -80,4 +80,4 @@ For acheiving the above,i have used the following commands
 - ```java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdatasection1group4.ProducerRavi raviteja-kafka-messages```
 
 Refrences:
-- [Kafka Example]((https://github.com/denisecase/kafka-api))
+- [Kafka Example](https://github.com/denisecase/kafka-api)
