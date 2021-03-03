@@ -60,3 +60,24 @@ java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmiss
 
 1. [Dr. Case's Twitter Example](https://github.com/denisecase/kafka-case)
 1. [Dr. Case's Kafka Example](https://github.com/denisecase/kafka-api)
+
+## Ravi Teja Pagidoju - Team Member
+As part of my work im displaying national park names randomly.
+In the used pub-sub model,I have created a Producer file named ProducerRavi.I implemented code such a way a random number is generated from the given national parks list length.Based on the random number generated im displaying the national parks using the number as index.
+
+As part of this app,i have to run the following
+- Zookeeper
+- Kafka Service
+- Consumer
+- Producer
+
+For acheiving the above,i have used the following commands
+- ```.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties```
+- ```.\bin\windows\kafka-server-start.bat .\config\server.properties```
+- ```.\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --create --topic raviteja-kafka-messages```
+- ```.\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --list```
+- ```java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdatasection1group4.Consumer raviteja-kafka-messages test2```
+- ```java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdatasection1group4.ProducerRavi raviteja-kafka-messages```
+
+Refrences:
+- [Kafka Example]((https://github.com/denisecase/kafka-api))
